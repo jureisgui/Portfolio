@@ -41,6 +41,11 @@ body{
     background-color: #00242C;
 }
 
+.study-case{
+    padding: 2em;
+    
+}
+
 /* TYPOGRAPHY */
 
 h1{
@@ -61,6 +66,7 @@ h3{
     font-size: clamp(24px, 5vw, 40px);
     font-weight: 700;
     font-size: 40px;
+    color: #00D1FF;
 }
 
 h4{
@@ -74,6 +80,21 @@ h5{
     font-size: 16px;
     writing-mode: vertical-lr;
     color: #fff;
+}
+
+h6{
+    font-family: 'Space Grotesk', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #00D1FF;
+}
+
+p{
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #00D1FF;
 }
 
 /* HEADER */
@@ -116,7 +137,6 @@ header{
 
 .landing > img{
     max-width: 700px;
-    width: 100%;
 }
 
 .introduction{
@@ -129,5 +149,92 @@ header{
     bottom: 1em; 
 }
 
-/* ECO STUDY CASE */
+/* STUDY CASES */
 
+.language-text{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.language-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.language-container img{
+    max-width: 40px;
+}
+
+.languages{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.tool-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #00D1FF;
+    border-radius: 8px;
+    padding: 2em 1em;
+    max-width: 168px;
+}
+
+.tools{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.example-link{
+    color: #00242C;
+    font-size: 16px;
+    font-family: 'Space Grotesk', serif;
+    font-weight: 600;
+}
+
+.platform{
+    color: #00242C;
+    font-size: 16px;
+}
+
+.study-example{
+    margin-top: 1em;
+    display: flex;
+    gap: 30px; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.prototypes-container{
+    flex: 50%;
+}
+
+.information-container{
+    flex: 40%;
+}
+
+.prototypes-container > p{
+    padding-bottom: 2em;
+}
+
+.info > h6{
+    margin-bottom: 0.5em;
+}
+
+.info > p{
+    max-width: 550px;
+}
+
+@media screen and (max-width: 1000px) {
+    .study-example{
+        flex-direction: column;
+        height: auto; 
+    }
+    
+}
