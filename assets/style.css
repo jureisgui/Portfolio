@@ -179,14 +179,6 @@ header{
     justify-content: flex-start;
 }
 
-/* .prototypes-container{
-    flex: 50%;
-}
-
-.information-container{
-    flex: 40%;
-} */
-
 .prototypes-container > img{
     max-width: 700px;
     width: 100%;
@@ -223,7 +215,7 @@ header{
     background-color: #00D1FF;
     border-radius: 8px;
     padding: 1em;
-    max-width: 168px;
+    width: clamp(100px, 50vw, 168px);
 }
 
 .tools{
@@ -234,7 +226,7 @@ header{
 
 .example-link{
     color: #00242C;
-    font-size: clamp(14px, 5vw, 16px);
+    font-size: clamp(12px, 5vw, 16px);
     font-family: 'Space Grotesk', serif;
     font-weight: 600;
 }
@@ -265,12 +257,18 @@ header{
 
 @media screen and (max-width: 524px) {
     .study-example{
-        max-width: 400px;
+        max-width: 300px;
+        gap: 10px;
         /* padding: 1em; */
     }  
+
+    .tools{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     
     .information-container{
-        max-width: 400px; 
+        max-width: 300px; 
         /* padding: 1em; */
     }
 
