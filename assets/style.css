@@ -137,6 +137,7 @@ header{
 
 .landing > img{
     max-width: 700px;
+    width: 100%;
 }
 
 .introduction{
@@ -206,8 +207,6 @@ header{
     margin-top: 1em;
     display: flex;
     gap: 30px; 
-    justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
