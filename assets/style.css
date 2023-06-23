@@ -90,6 +90,16 @@ p{
     color: #00D1FF;
 }
 
+li {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #00D1FF;
+    
+
+}
+
 /* HEADER */
 header{
     display: flex;
@@ -122,6 +132,7 @@ header{
     padding: 1em;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     color:#00D1FF;
     position: relative;
@@ -146,17 +157,11 @@ header{
 
 /* STUDY CASES */
 
-/* .portolio-example{
-    margin: 0 auto;
-    padding: 1em 4em;
-} */
-
 .study-case {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
-    /* margin-top: 1em; */
+    /* height: 100vh; */
     padding: clamp(1em, 5vw, 2em);
 }
 
@@ -165,7 +170,6 @@ header{
     gap: 40px;
     max-width: 1800px;
     align-items: flex-start;
-    height: 100vh;
     margin-top: 1em;
 }
 
@@ -249,6 +253,10 @@ header{
     max-width: 550px;
 }
 
+ul{
+    padding-left: 1.5em;
+}
+
 @media screen and (max-width: 1100px) {
     .study-example{
         flex-direction: column;
@@ -258,9 +266,8 @@ header{
 
 @media screen and (max-width: 524px) {
     .study-example{
-        max-width: 300px;
+        max-width: 350px;
         gap: 10px;
-        /* padding: 1em; */
     }  
 
     .tools{
@@ -269,8 +276,7 @@ header{
     }
     
     .information-container{
-        max-width: 300px; 
-        /* padding: 1em; */
+        max-width: 350px; 
     }
 
 }
