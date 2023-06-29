@@ -149,11 +149,18 @@ header{
     text-align: left;
 }
 
-.scroll-button{
-    position: absolute; 
-    right: 2em; 
-    bottom: 1em; 
+/* ARROW DOWN */
+.arrow-down{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    
+  }
+  
+  @-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
+  
 
 /* STUDY CASES */
 
@@ -161,7 +168,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* height: 100vh; */
+    min-height: 100vh;
     padding-left: clamp(1em, 5vw, 2em);
     padding-right: clamp(1em, 5vw, 2em);
     padding-top: clamp(2em, 5vw, 4em);
@@ -238,6 +245,10 @@ header{
     font-weight: 600;
 }
 
+.example-link > a{
+    color:#00242C;
+}
+
 .platform{
     color: #00242C;
     font-size: clamp(14px, 5vw, 16px);
@@ -247,6 +258,9 @@ header{
     padding-bottom: 2em;
 }
 
+.prototypes-container > img{
+    margin: 0 auto;
+}
 .info > h6{
     margin-bottom: 0.5em;
 }
