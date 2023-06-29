@@ -96,8 +96,6 @@ li {
     font-weight: 500;
     line-height: 27px;
     color: #00D1FF;
-    
-
 }
 
 /* HEADER */
@@ -149,19 +147,25 @@ header{
     text-align: left;
 }
 
-/* ARROW DOWN */
+/* ARROW BUTTONS */
 .arrow-down{
+    margin-top: 0.5em;
     -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-    
+    animation: mover 1s infinite  alternate;    
   }
   
   @-webkit-keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
 }
-  
 
+.back-top{
+    margin-left: auto;
+    display: block;
+    margin-top: 2em;
+    max-width: 40px;
+}
+  
 /* STUDY CASES */
 
 .study-case {
@@ -260,6 +264,10 @@ header{
 
 .prototypes-container > img{
     margin: 0 auto;
+}
+
+img.smaller-prototype{
+    max-width: 600px
 }
 .info > h6{
     margin-bottom: 0.5em;
