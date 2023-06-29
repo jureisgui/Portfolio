@@ -17,6 +17,7 @@
 /* dark mode user-agent-styles */
 html {
   color-scheme: dark light;
+    scroll-behavior: smooth;
 }
 
 /* min body height */
