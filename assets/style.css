@@ -108,6 +108,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 2em;
+    padding-top: 0.5em;
     padding-bottom: 0;
 }
 
