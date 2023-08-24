@@ -367,8 +367,16 @@ ul{
     padding-bottom: 1em;
 }
 
+.email-me{
+    font-weight: 700;
+}
+
 .cv-link{
-    color: #00D1FF;
+    color: #00242C;
+    background-color: #00D1FF;
+    border-radius: 8px;
+    padding: 0.5em;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 1100px) {
