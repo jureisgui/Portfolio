@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/style.css">
     <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Darker+Grotesque:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">  
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Darker+Grotesque:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3af9242bbb.js" crossorigin="anonymous"></script>
     <!-- JS -->
@@ -29,19 +32,23 @@
     <header class="sticky top-0 z-50 w-full">
         <div class="py-5 px-8 flex justify-between items-center max-w-7xl mx-auto">
             <div class="flex space-x-6 items-center">
-                <a href="./index.html"><img src="./assets/images/jlogo.png" alt="Logo: letter J inside a circle" class="logo"></a>
-                <a href="https://www.github.com/jureisgui" target="_blank"><i class="fa-brands fa-github menu-icons menu-hover"></i></a>
-                <a href="https://www.linkedin.com/in/jureisgui/" target="_blank"><i class="fa-brands fa-linkedin menu-icons menu-hover"></i></a>
-                <a href="https://www.behance.net/jureisgui" target="_blank"><i class="fa-brands fa-square-behance menu-icons menu-hover"></i></a>
+                <a href="./index.html"><img src="./assets/images/jlogo.png" alt="Logo: letter J inside a circle"
+                        class="logo"></a>
+                <a href="https://www.github.com/jureisgui" target="_blank"><i
+                        class="fa-brands fa-github menu-icons menu-hover"></i></a>
+                <a href="https://www.linkedin.com/in/jureisgui/" target="_blank"><i
+                        class="fa-brands fa-linkedin menu-icons menu-hover"></i></a>
+                <a href="https://www.behance.net/jureisgui" target="_blank"><i
+                        class="fa-brands fa-square-behance menu-icons menu-hover"></i></a>
             </div>
-    
+
             <!-- Burger menu icon -->
             <div class="md:hidden">
                 <button id="burger-menu" class="text-white focus:outline-none">
-                    <i class="fa fa-bars text-3xl"></i> 
+                    <i class="fa fa-bars text-3xl"></i>
                 </button>
             </div>
-    
+
             <!-- Navigation links (hidden on mobile) -->
             <nav class="hidden md:block">
                 <ul class="flex space-x-6">
@@ -52,9 +59,10 @@
                 </ul>
             </nav>
         </div>
-    
+
         <!-- Mobile navigation (hidden by default) -->
-        <nav id="mobile-menu" class="hidden fixed inset-0 bg-teal-900 bg-opacity-90 flex flex-col justify-center items-center space-y-6 text-2xl text-white">
+        <nav id="mobile-menu"
+            class="hidden fixed inset-0 bg-teal-900 bg-opacity-90 flex flex-col justify-center items-center space-y-6 text-2xl text-white">
             <a href="#about" onclick="toggleMenu()">About Me</a>
             <a href="#experience" onclick="toggleMenu()">Experience</a>
             <a href="#projects" onclick="toggleMenu()">Projects</a>
@@ -66,11 +74,11 @@
         <div class="">
             <img src="./assets/images/landing.png" alt="Photo of Juliana" class="object-contain lg:w-3/4 w-2/4 mx-auto">
         </div>
-        
+
         <div class="mt-5">
             <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold">Hello, I am</h2>
             <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">Juliana</h1>
-            <h3 class="text-2xl sm:text-3xl md:text-4xl font-medium mt-3">Web developer, with UX knowledge</h2>
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-medium mt-3">Web developer, with UX knowledge</h3>
         </div>
     </section>
 
@@ -79,51 +87,70 @@
         <!-- About me section -->
         <div id="about" class="grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 py-10 md:px-16 md:py-20 text-white">
             <div class="w-full lg:order-2">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-12">About Me</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-12">About Me
+                </h2>
                 <div id="accordion">
                     <div class="accordion-item border-b border-white">
-                        <div class="accordion-header flex justify-between items-center p-4 cursor-pointer" data-target="accordion-1">
+                        <div class="accordion-header flex justify-between items-center p-4 cursor-pointer"
+                            data-target="accordion-1">
                             <h4 class="md:text-xl font-bold">From Brazil to New Zealand</h4>
                             <i class="fa fa-chevron-down"></i>
                         </div>
                         <div id="accordion-1" class="accordion-body p-4 rounded-b">
-                            <p>I am originally from Brazil and have been living in New Zealand since February 2016. I came here for a career break and ended up staying because of the culture and beautiful scenery.</p>
+                            <p>I am originally from Brazil and have been living in New Zealand since February 2016. I
+                                came here for a career break and ended up staying because of the culture and beautiful
+                                scenery.</p>
                         </div>
                     </div>
                     <div class="accordion-item border-b border-white">
-                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer" data-target="accordion-2">
+                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer"
+                            data-target="accordion-2">
                             <h4 class="md:text-xl font-bold">A Decade of Teaching</h4>
                             <i class="fa fa-chevron-down"></i>
                         </div>
                         <div id="accordion-2" class="accordion-body hidden p-4 bg-teal-700 rounded-b">
-                            <p>Most of my adult life has been dedicated to teaching, and it was a career I fell in love with while studying something completely unrelated in university (Social Communications). I pursued my passion for teaching until the notorious burnout caught up with me after a decade.</p>
+                            <p>Most of my adult life has been dedicated to teaching, and it was a career I fell in love
+                                with while studying something completely unrelated in university (Social
+                                Communications). I pursued my passion for teaching until the notorious burnout caught up
+                                with me after a decade.</p>
                         </div>
                     </div>
                     <div class="accordion-item border-b border-white">
-                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer" data-target="accordion-3">
+                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer"
+                            data-target="accordion-3">
                             <h4 class="md:text-xl font-bold">Discovering Coding</h4>
                             <i class="fa fa-chevron-down"></i>
                         </div>
                         <div id="accordion-3" class="accordion-body hidden p-4 rounded-b">
-                            <p>Since then, I found a new passion: coding. I enjoy the challenge and transforming ideas into tangible digital creations.</p>
+                            <p>Since then, I found a new passion: coding. I enjoy the challenge and transforming ideas
+                                into tangible digital creations.</p>
                         </div>
                     </div>
                     <div class="accordion-item border-b border-white">
-                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer" data-target="accordion-4">
+                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer"
+                            data-target="accordion-4">
                             <h4 class="md:text-xl font-bold">Personality Traits</h4>
                             <i class="fa fa-chevron-down"></i>
                         </div>
                         <div id="accordion-4" class="accordion-body hidden p-4 rounded-b">
-                            <p>I have a good sense of humor and a lot of patience (probably because of my teaching background). I am quite adaptable too, having lived in three culturally distinct countries (USA, Finland, and now NZ) and worked across various industries like education, hospitality, customer service, and now IT.</p>
+                            <p>I have a good sense of humor and a lot of patience (probably because of my teaching
+                                background). I am quite adaptable too, having lived in three culturally distinct
+                                countries (USA, Finland, and now NZ) and worked across various industries like
+                                education, hospitality, customer service, and now IT.</p>
                         </div>
                     </div>
                     <div class="accordion-item border-b border-white">
-                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer" data-target="accordion-5">
+                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer"
+                            data-target="accordion-5">
                             <h4 class="md:text-xl font-bold">Memorable Adventures</h4>
                             <i class="fa fa-chevron-down"></i>
                         </div>
                         <div id="accordion-5" class="accordion-body hidden p-4 rounded-b">
-                            <p>I'm always up for new and exciting experiences! Some of my favorite adventure-filled memories include working at Disney World, deciding to go skydiving on a whim and taking the leap the same day, and braving the winter in Finland. But hey, not all adventures turn out to be a blast! One of my least favorite spur-of-the-moment decisions was bungee jumping, and let me tell you, I was absolutely petrified!</p>
+                            <p>I'm always up for new and exciting experiences! Some of my favorite adventure-filled
+                                memories include working at Disney World, deciding to go skydiving on a whim and taking
+                                the leap the same day, and braving the winter in Finland. But hey, not all adventures
+                                turn out to be a blast! One of my least favorite spur-of-the-moment decisions was bungee
+                                jumping, and let me tell you, I was absolutely petrified!</p>
                         </div>
                     </div>
                 </div>
@@ -139,28 +166,46 @@
         <div class="grid lg:grid-cols-2 gap-12">
             <!-- Experience Section -->
             <div class="space-y-6">
-                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-12">Experience</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-12">Experience
+                </h2>
                 <div class="space-y-4">
                     <div>
                         <div class="flex justify-between">
                             <h4 class="text-xl font-bold">Full stack Developer - Devart</h4>
                             <p class="text-gray-200">04/2024 - 09/2024</p>
                         </div>
-                        <p class="mt-2 text-gray-200">I contribute to designing, developing, and maintaining websites and applications tailored to diverse client needs. My role involves both front-end and back-end development, utilising technologies such as SilverStripe, Laravel, Astro, Tailwind, Vue.js, and Docker. I also collaborate closely with clients to understand their requirements and provide effective solutions to their challenges. The languages I frequently use include PHP, JavaScript, HTML, CSS, and SQL.</p>
+                        <p class="mt-2 text-gray-200">I contribute to designing, developing, and maintaining websites
+                            and applications tailored to diverse client needs. My role involves both front-end and
+                            back-end development, utilising technologies such as SilverStripe, Laravel, Astro, Tailwind,
+                            Vue.js, and Docker. I also collaborate closely with clients to understand their requirements
+                            and provide effective solutions to their challenges. The languages I frequently use include
+                            PHP, JavaScript, HTML, CSS, and SQL.</p>
                     </div>
                     <div>
                         <div class="flex justify-between">
                             <h4 class="text-xl font-bold">Intranet Developer - Central Heating New Zealand</h4>
                             <p class="text-gray-200">11/2023 - 03/2024</p>
                         </div>
-                        <p class="mt-2 text-gray-200">As a Summer Intern, I developed the internal communication intranet using SharePoint as the primary platform. My role included integrating Microsoft 365 group frameworks like PowerApps and Power Automate to streamline processes and enhance intranet features. I consistently communicated with employees to understand their needs and implemented functionalities that improved their intranet experience. I used languages such as JavaScript, HTML, and CSS to create and customise solutions.</p>
+                        <p class="mt-2 text-gray-200">As a Summer Intern, I developed the internal communication
+                            intranet using SharePoint as the primary platform. My role included integrating Microsoft
+                            365 group frameworks like PowerApps and Power Automate to streamline processes and enhance
+                            intranet features. I consistently communicated with employees to understand their needs and
+                            implemented functionalities that improved their intranet experience. I used languages such
+                            as JavaScript, HTML, and CSS to create and customise solutions.</p>
                     </div>
                     <div>
                         <div class="flex justify-between">
                             <h4 class="text-xl font-bold">Web Developer - South Island Wildlife Hospital</h4>
                             <p class="text-gray-200">08/2023 - Present</p>
                         </div>
-                        <p class="mt-2 text-gray-200">For my final project for my Diploma in Web and UX Design, I created a UX case study, user documentation, and a four-page WordPress website with a WooCommerce shop for South Island Wildlife Hospital. Recognising the potential benefits, I offered to redesign additional pages and implement changes based on their feedback. I also created a WordPress website with a customised admin area for the staff and implemented a shop using WooCommerce for fundraising. Since then, I have continued to support their website as a volunteer, driven by my passion for helping this incredible organisation. I utilised languages such as HTML, CSS, JavaScript, and PHP for this project.</p>
+                        <p class="mt-2 text-gray-200">For my final project for my Diploma in Web and UX Design, I
+                            created a UX case study, user documentation, and a four-page WordPress website with a
+                            WooCommerce shop for South Island Wildlife Hospital. Recognising the potential benefits, I
+                            offered to redesign additional pages and implement changes based on their feedback. I also
+                            created a WordPress website with a customised admin area for the staff and implemented a
+                            shop using WooCommerce for fundraising. Since then, I have continued to support their
+                            website as a volunteer, driven by my passion for helping this incredible organisation. I
+                            utilised languages such as HTML, CSS, JavaScript, and PHP for this project.</p>
                     </div>
                 </div>
             </div>
@@ -172,69 +217,163 @@
                     <div class="skills-card">
                         <h3 class="text-xl">Frontend Development</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="skills-tag">Html</span>
-                            <span class="skills-tag">CSS</span>
-                            <span class="skills-tag">SASS</span>
-                            <span class="skills-tag">Tailwind</span>
-                            <span class="skills-tag">Vue.js</span>
-                            <span class="skills-tag">Bootstrap</span>
+                            <span class="tags">Html</span>
+                            <span class="tags">CSS</span>
+                            <span class="tags">SASS</span>
+                            <span class="tags">Tailwind</span>
+                            <span class="tags">Vue.js</span>
+                            <span class="tags">Bootstrap</span>
                         </div>
                     </div>
                     <div class="skills-card">
                         <h3 class="text-xl">Backend Development</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="skills-tag">PHP</span>
-                            <span class="skills-tag">Javascript</span>
-                            <span class="skills-tag">Laravel</span>
-                            <span class="skills-tag">MySQL</span>
-                            <span class="skills-tag">Docker</span>
+                            <span class="tags">PHP</span>
+                            <span class="tags">Javascript</span>
+                            <span class="tags">Laravel</span>
+                            <span class="tags">MySQL</span>
+                            <span class="tags">Docker</span>
                         </div>
                     </div>
                     <div class="skills-card">
                         <h3 class="text-xl">Design and Tools</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="skills-tag">Figma</span>
-                            <span class="skills-tag">Illustrator</span>
-                            <span class="skills-tag">Photoshop</span>
-                            <span class="skills-tag">Visual Studio Code</span>
+                            <span class="tags">Figma</span>
+                            <span class="tags">Illustrator</span>
+                            <span class="tags">Photoshop</span>
+                            <span class="tags">Visual Studio Code</span>
                         </div>
                     </div>
                     <div class="skills-card">
                         <h3 class="text-xl">CMS</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="skills-tag">Silverstripe</span>
-                            <span class="skills-tag">Shopify</span>
-                            <span class="skills-tag">Wordpress</span>
-                            <span class="skills-tag">WooCommerce</span>
+                            <span class="tags">Silverstripe</span>
+                            <span class="tags">Shopify</span>
+                            <span class="tags">Wordpress</span>
+                            <span class="tags">WooCommerce</span>
                         </div>
                     </div>
                     <div class="skills-card">
                         <h3 class="text-xl">Additional Technical Skills</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="skills-tag">Version Control (GitLab, GitHub)</span>
-                            <span class="skills-tag">APIs</span>
-                            <span class="skills-tag">MySQL</span>
-                            <span class="skills-tag">Docker</span>
+                            <span class="tags">Version Control (GitLab, GitHub)</span>
+                            <span class="tags">APIs</span>
+                            <span class="tags">MySQL</span>
+                            <span class="tags">Docker</span>
                         </div>
                     </div>
                     <div class="skills-card">
                         <h3 class="text-xl">Soft Skills</h3>
                         <div class="flex flex-wrap gap-2">
-                            <span class="skills-tag">Communication</span>
-                            <span class="skills-tag">Problem Solving</span>
-                            <span class="skills-tag">Adaptability</span>
+                            <span class="tags">Communication</span>
+                            <span class="tags">Problem Solving</span>
+                            <span class="tags">Adaptability</span>
                         </div>
                     </div>
                     <div class="mt-8 flex space-x-4">
                         <a href="./assets/documentation/CV.pdf" target="_blank" class="button-one">VIEW CV</a>
                         <a href="mailto:ju.reisgui@gmail.com" target="_blank" class="button-two">CONTACT ME</a>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
+    </div>
 
+    <div id="projects" class="container mx-auto px-6 md:px-8 py-10 md:py-20">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-12">Projects</h2>
+
+        <div class="space-y-8">
+            <!-- Project SIWH -->
+            <div class="rounded-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 p-6 project-mock">
+                        <img src="./assets/images/project-siwh.png" alt="South Island Wildlife Hospital"
+                            class="max-h-96">
+                    </div>
+                    <div class="md:w-1/2 p-6 project-details">
+                        <h3 class="text-2xl font-bold mb-4">South Island Wildlife Hospital</h3>
+                        <p class="mb-4">I redesigned the South Island Wildlife Hospital's website, conducting UX
+                            research, documentation, and development to create an intuitive donation system. The goal
+                            was to increase donor engagement, raise funds for vital resources, and raise awareness of
+                            environmental factors affecting native wildlife care. Additionally, I handled the CMS and
+                            e-commerce integration.</p>
+                        <div class="flex space-x-2 mb-4">
+                            <span class="tags">Wordpress</span>
+                            <span class="tags">Woocommerce</span>
+                            <span class="tags">Javascript</span>
+                            <span class="tags">PHP</span>
+                            <span class="tags">Figma</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="./assets/documentation/Wildlife-compressed.pdf" target="_blank">
+                                <div class="w-36 h-36 rounded-lg example-card">
+                                    <i class="fas fa-file-alt text-3xl"></i>
+                                    <p>UX Documentation</p>
+                                </div>
+                            </a>
+                            <a href="https://wildlifehospital.co.nz/" target="_blank">
+                                <div class="w-36 h-36 rounded-lg example-card">
+                                    <i class="fas fa-laptop text-3xl"></i>
+                                    <p>Website</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project MovieNews -->
+            <div class="rounded-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row-reverse">
+                    <div class="md:w-1/2 p-6 project-mock">
+                        <img src="./assets/images/project-movienews.png" alt="Movie News" class="max-h-96">
+                    </div>
+                    <div class="md:w-1/2 p-6 project-details">
+                        <h3 class="text-2xl font-bold mb-4">Movie News</h3>
+                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac
+                            tellus egestas viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                            posuere cubilia curae.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tags">Vue.js</span>
+                            <span class="tags">React</span>
+                            <span class="tags">CSS</span>
+                            <span class="tags">Figma</span>
+                            <span class="tags">Illustrator</span>
+                            <span class="tags">Cypress</span>
+                            <span class="tags">Storybook</span>
+                            <span class="tags">GitHub</span>
+                        </div>
+                        <!-- <div class="flex space-x-4">
+                            <a href="#"
+                                class="flex items-center justify-center w-12 h-12 bg-cyan-400 rounded-lg text-teal-900">
+                                <i class="fas fa-laptop text-xl"></i>
+                            </a>
+                            <a href="#"
+                                class="flex items-center justify-center w-12 h-12 bg-cyan-400 rounded-lg text-teal-900">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                        </div> -->
+                        <div class="flex space-x-4">
+                            <a href="./assets/documentation/Wildlife-compressed.pdf" target="_blank">
+                                <div class="w-36 h-36 rounded-lg example-card">
+                                    <i class="fas fa-file-alt text-3xl"></i>
+                                    <p>UX Documentation</p>
+                                </div>
+                            </a>
+                            <a href="https://wildlifehospital.co.nz/" target="_blank">
+                                <div class="w-36 h-36 rounded-lg example-card">
+                                    <i class="fab fa-github text-3xl"></i>
+                                    <p>GitHub</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </body>
+
 </html>

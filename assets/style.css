@@ -131,7 +131,7 @@ header {
 
 /* SKILLS  */
 .skills-card{
-    background-color: #00D1FF;
+    background-color: #007B95;
     padding: 1rem;
     border-radius: 12px;
 }
@@ -142,7 +142,7 @@ header {
     margin-bottom: 0.5rem;
 }
 
-.skills-tag{
+.tags{
     border-radius: 12px;
     background-color: #00242C;
     padding: 4px 10px;
@@ -179,222 +179,37 @@ header {
     transform: scale(1.05);
 }
  
-/* STUDY CASES */
-
-.study-cases-container {
+/* PROJECTS */
+.project-mock{
+    background-color: #71969D;
+    padding: 2em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: clamp(2em, 5vw, 4em);
-    padding-bottom: clamp(2em, 5vw, 4em);
-}
-
-.study-case {
-    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding-left: clamp(1em, 5vw, 2em);
-    padding-right: clamp(1em, 5vw, 2em);
-    position: relative; 
 }
 
-.study-example {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1em;
+.project-details{
+    background-color: #007B95;
 }
 
-.study-example > .prototypes-container {
-    flex: 1.5;
-}
-  
-.study-example > .information-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.project-details h3{
+    color: #FFF;
 }
 
-.prototypes-container > img{
-    max-width: 700px;
-    width: 100%;
-}
-  
-.language-text{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 16px;
-    color: #fff;
-}
-
-.language-container{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-
-.language-container img{
-    max-width: 40px;
-}
-
-.languages{
-    display: flex;
-    gap: 15px;
-    margin-bottom: 1em;
-}
-
-.tool-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.example-card{
     background-color: #00D1FF;
-    border-radius: 8px;
-    padding: 1em;
-    width: clamp(100px, 50vw, 168px);
-    transition: transform 0.2s; 
-}
-
-.tool-card:hover{
-    transform: scale(1.1);
-} 
-
-.tools{
     display: flex;
-    gap: 1.5em;
-    margin-bottom: 1em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    color: #00242C;
 }
 
-.example-link{
-    color: #00242C;
-    font-size: clamp(12px, 5vw, 16px);
-    font-family: 'Space Grotesk', serif;
+.example-card p{
+    color: #00242C !important;
     font-weight: 600;
 }
 
-.example-link > a{
-    color:#00242C;
-}
-
-.platform{
-    color: #00242C;
-    font-size: clamp(14px, 5vw, 16px);
-}
-
-.prototypes-container > p{
-    padding-bottom: 2em;
-}
-
-.prototypes-container > img{
-    margin: 0 auto;
-}
-
-img.smaller-prototype{
-    max-width: 600px
-}
-.info > h6{
-    margin-bottom: 0.5em;
-}
-
-.info > p{
-    max-width: 550px;
-}
-
-ul{
-    padding-left: 1.5em;
-}
-
-.info{
-    margin-bottom: 1em;
-}
-
-/* ABOUT ME */
-
-.about-me{
-    color: #00D1FF;
-    max-height: 80vh;
-    padding-left: clamp(1em, 5vw, 2em);
-    padding-right: clamp(1em, 5vw, 2em);
-    padding-top: clamp(1em, 5vw, 2em);
-    padding-bottom: clamp(2em, 5vw, 4em);
-}
-
-.about-me > h1{
-    text-align: center;
-    padding-bottom: 0.5em;
-}
-
-.about-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; 
-    gap: 10px;  
-}
-
-.text-container {
-    flex: 1.3;
-    max-width: 700px;
-}
-  
-.image-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 600px;
-    padding-bottom: 1em;
-}
-
-.email-me{
-    font-weight: 700;
-}
-
-.cv-link{
-    color: #00242C;
-    background-color: #00D1FF;
-    border-radius: 8px;
-    padding: 0.5em;
-    font-weight: 700;
-    display: inline-block;
-    transition: transform 0.2s; 
-}
-
-.cv-link:hover{
-    transform: scale(1.1);
-} 
-
-@media screen and (max-width: 1100px) {
-    .study-example,
-    .about-container{
-        flex-direction: column;
-        align-items: center;
-    }   
-
-    .arrow-down {
-        bottom: -1em;
-        transform: translateX(-50%) rotate(-90deg);
-      } 
-}
-
-@media screen and (max-width: 524px) {
-    .study-example{
-        max-width: 350px;
-        gap: 10px;
-    }  
-
-    .tools{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .information-container{
-        max-width: 350px; 
-    }
-
-    .info{
-        margin-bottom: 1.8em;
-    }
-
-}
