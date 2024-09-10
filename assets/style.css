@@ -122,7 +122,18 @@ header{
     transition: 1.2s ease-in-out;
 }
 
-.links{
+.menu-icons{
+    font-size: 30px;
+    color:#00D1FF;
+
+}
+
+.menu-hover:hover{
+    color: #FFF;
+    
+}
+
+/* .links{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -144,7 +155,7 @@ header{
 
 .menu-link:hover{
     transform: scale(1.1);
-} 
+}  */
 
 
 /* LANDING */
