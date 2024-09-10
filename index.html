@@ -26,31 +26,33 @@
 <body>
 
     <!-- Navigation -->
-    <header class="py-5 px-8 flex justify-between items-center">
-        <div class="flex space-x-6 items-center">
-            <a href="./index.html"><img src="./assets/images/jlogo.png" alt="Logo: letter J inside a circle"  class="logo"></a>
-            <a href="https://www.github.com/jureisgui" target="_blank"><i class="fa-brands fa-github menu-icons menu-hover"></i></a>
-            <a href="https://www.linkedin.com/in/jureisgui/" target="_blank"><i class="fa-brands fa-linkedin menu-icons menu-hover"></i></a>
-            <a href="https://www.behance.net/jureisgui" target="_blank"><i class="fa-brands fa-square-behance menu-icons menu-hover"></i></a>
+    <header class="sticky top-0 z-50 w-full">
+        <div class="py-5 px-8 flex justify-between items-center max-w-7xl mx-auto">
+            <div class="flex space-x-6 items-center">
+                <a href="./index.html"><img src="./assets/images/jlogo.png" alt="Logo: letter J inside a circle" class="logo"></a>
+                <a href="https://www.github.com/jureisgui" target="_blank"><i class="fa-brands fa-github menu-icons menu-hover"></i></a>
+                <a href="https://www.linkedin.com/in/jureisgui/" target="_blank"><i class="fa-brands fa-linkedin menu-icons menu-hover"></i></a>
+                <a href="https://www.behance.net/jureisgui" target="_blank"><i class="fa-brands fa-square-behance menu-icons menu-hover"></i></a>
+            </div>
+    
+            <!-- Burger menu icon -->
+            <div class="md:hidden">
+                <button id="burger-menu" class="text-white focus:outline-none">
+                    <i class="fa fa-bars text-3xl"></i> 
+                </button>
+            </div>
+    
+            <!-- Navigation links (hidden on mobile) -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="menu-hover">About Me</a></li>
+                    <li><a href="#experience" class="menu-hover">Experience</a></li>
+                    <li><a href="#projects" class="menu-hover">Projects</a></li>
+                    <li><a href="#contact" class="menu-hover">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <!-- Burger menu icon -->
-        <div class="md:hidden">
-            <button id="burger-menu" class="text-white focus:outline-none">
-                <i class="fa fa-bars text-3xl"></i> 
-            </button>
-        </div>
-
-        <!-- Navigation links (hidden on mobile) -->
-        <nav class="hidden md:block">
-            <ul class="flex space-x-6">
-                <li><a href="#about" class="menu-hover">About Me</a></li>
-                <li><a href="#experience" class="menu-hover">Experience</a></li>
-                <li><a href="#projects" class="menu-hover">Projects</a></li>
-                <li><a href="#contact" class="menu-hover">Contact</a></li>
-            </ul>
-        </nav>
-
+    
         <!-- Mobile navigation (hidden by default) -->
         <nav id="mobile-menu" class="hidden fixed inset-0 bg-teal-900 bg-opacity-90 flex flex-col justify-center items-center space-y-6 text-2xl text-white">
             <a href="#about" onclick="toggleMenu()">About Me</a>
@@ -59,40 +61,86 @@
             <a href="#contact" onclick="toggleMenu()">Contact</a>
         </nav>
     </header>
-
-    <section class="flex flex-col items-center justify-center text-center bg-teal-900 max-h-screen" id="landing-section">
-        <img src="./assets/images/landing.png" alt="Photo of Juliana" class="max-h-fit object-cover">
+    <!-- Landing hero -->
+    <section class="flex flex-col items-center justify-center text-center max-h-screen mb-12" id="landing-section">
+        <div class="">
+            <img src="./assets/images/landing.png" alt="Photo of Juliana" class="object-contain lg:w-3/4 w-2/4 mx-auto">
+        </div>
+        
         <div class="mt-5">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">Hello, I am Juliana</h1>
-            <h3 class="text-2xl sm:text-3xl md:text-4xl font-medium mt-3">Frontend developer, with UX knowledge</h3>
-        </div>
-    </section>
-    
-    
-    
-
-    <!-- <section class="landing"></section>
-        <img src="./assets/images/landing.png" alt="">
-        <div class="introduction">
-            <h2>Hello, I am</h2>
-            <h1>Juliana</h1>
-        </div>
-        <h4>Junior Front-End developer, with UX knowledge</h4>
-    </section> -->
-
-<!-- 
-    <section class="landing">
-        <img src="./assets/images/landing.png" alt="">
-        <div class="introduction">
-            <h2>Hello, I am</h2>
-            <h1>Juliana</h1>
-        </div>
-        <h4>Junior Front-End developer, with UX knowledge</h4>
-        <div class="arrow-down">        
-            <a href="#wildlife"><img src="./assets/images/icons/scroll.png" alt=""></a>            
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold">Hello, I am</h2>
+            <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold">Juliana</h1>
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-medium mt-3">Web developer, with UX knowledge</h2>
         </div>
     </section>
 
+    <div class="body-container">
+
+        <!-- About me section -->
+        <div id="about" class="grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 py-10 md:px-16 md:py-20 text-white">
+            <div class="w-full lg:order-2">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-12">About Me</h2>
+                <div id="accordion">
+                    <div class="accordion-item border-b border-white">
+                        <div class="accordion-header flex justify-between items-center p-4 cursor-pointer" data-target="accordion-1">
+                            <h4 class="md:text-xl font-semibold">From Brazil to New Zealand</h4>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div id="accordion-1" class="accordion-body p-4 rounded-b">
+                            <p>I am originally from Brazil and have been living in New Zealand since February 2016. I came here for a career break and ended up staying because of the culture and beautiful scenery.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-b border-white">
+                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer" data-target="accordion-2">
+                            <h4 class="md:text-xl font-semibold">A Decade of Teaching</h4>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div id="accordion-2" class="accordion-body hidden p-4 bg-teal-700 rounded-b">
+                            <p>Most of my adult life has been dedicated to teaching, and it was a career I fell in love with while studying something completely unrelated in university (Social Communications). I pursued my passion for teaching until the notorious burnout caught up with me after a decade.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-b border-white">
+                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer" data-target="accordion-3">
+                            <h4 class="md:text-xl font-semibold">Discovering Coding</h4>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div id="accordion-3" class="accordion-body hidden p-4 rounded-b">
+                            <p>Since then, I found a new passion: coding. I enjoy the challenge and transforming ideas into tangible digital creations.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-b border-white">
+                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer" data-target="accordion-4">
+                            <h4 class="md:text-xl font-semibold">Personality Traits</h4>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div id="accordion-4" class="accordion-body hidden p-4 rounded-b">
+                            <p>I have a good sense of humor and a lot of patience (probably because of my teaching background). I am quite adaptable too, having lived in three culturally distinct countries (USA, Finland, and now NZ) and worked across various industries like education, hospitality, customer service, and now IT.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-b border-white">
+                        <div class="accordion-header flex justify-between items-center p-4 rounded cursor-pointer" data-target="accordion-5">
+                            <h4 class="md:text-xl font-semibold">Memorable Adventures</h4>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div id="accordion-5" class="accordion-body hidden p-4 rounded-b">
+                            <p>I'm always up for new and exciting experiences! Some of my favorite adventure-filled memories include working at Disney World, deciding to go skydiving on a whim and taking the leap the same day, and braving the winter in Finland. But hey, not all adventures turn out to be a blast! One of my least favorite spur-of-the-moment decisions was bungee jumping, and let me tell you, I was absolutely petrified!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-center items-center lg:order-1">
+                <img src="./assets/images/aboutme.png" alt="" class="w-3/5">
+            </div>
+        </div>
+
+    </div>
+
+
+    
+    
+    
+
+    <!-- 
     <div class="study-cases-container">
         <section class="study-case" id="wildlife">        
             <div class="study-example">

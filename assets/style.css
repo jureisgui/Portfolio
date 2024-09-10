@@ -52,18 +52,17 @@ h2{
     font-family: 'Space Grotesk', serif;
     font-size: clamp(30px, 5vw, 40px);
     font-weight: 700;
+    color: #00D1FF;
 }
 
-h3 {
+h3{
     font-family: 'Space Grotesk', serif;
     color: #00D1FF;
 }
 
 h4{
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: clamp(20px, 5vw, 32px);
-    font-weight: 500;
-    margin-top: -15px;
+    font-size: clamp(22px, 5vw, 32px);
 }
 
 h5{
@@ -85,7 +84,7 @@ p{
     font-size: 20px;
     font-weight: 500;
     line-height: 27px;
-    color: #00D1FF;
+    color: #FFF;
 }
 
 li {
@@ -97,13 +96,9 @@ li {
 }
 
 /* HEADER */
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2em;
-    padding-top: 0.7em;
-    padding-bottom: 0;
+header {
+    background-color: #00242C;
+    
 }
 
 .logo{
@@ -127,54 +122,13 @@ header{
     
 }
 
-/* .links{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: transform 0.2s; 
-}
-
-.links > a:hover{
-    transform: scale(1.1);
-} 
-
-.menu-link{
-    font-family: 'Darker Grotesque', sans-serif;
-    color: #00D1FF;
-    font-size: 20px;
-    font-weight: 600;
-    display: inline-block; 
-    transition: transform 0.2s; 
-}
-
-.menu-link:hover{
-    transform: scale(1.1);
-}  */
-
-/* LANDING */
-
-/* .landing{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color:#00D1FF;
-    position: relative;
-    height: 95vh;
-    margin-bottom: 2em;
-}
-
-.landing > img{
-    max-width: 600px;
-    width: 100%;
-}
-
-.introduction{
-    text-align: left;
-} */
-
-section {
+#landing-section {
     min-height: calc(100vh - 120px);
+}
+
+.body-container{
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 /* ARROW BUTTONS */

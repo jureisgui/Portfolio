@@ -36,3 +36,35 @@ document.addEventListener('DOMContentLoaded', function() {
         event.stopPropagation();
     });
 });
+
+// About me accordion
+document.addEventListener('DOMContentLoaded', () => {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const targetId = header.getAttribute('data-target');
+            const targetBody = document.getElementById(targetId);
+            const icon = header.querySelector('i');
+
+            // Close any open accordion and reset icons
+            const allBodies = document.querySelectorAll('.accordion-body');
+            const allIcons = document.querySelectorAll('.accordion-header i');
+            allBodies.forEach(body => {
+                if (body !== targetBody) {
+                    body.classList.add('hidden');
+                }
+            });
+            allIcons.forEach(icn => {
+                icn.classList.remove('fa-chevron-up');
+                icn.classList.add('fa-chevron-down');
+            });
+
+            // Toggle the current accordion and icon
+            targetBody.classList.toggle('hidden');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        });
+    });
+});
+
