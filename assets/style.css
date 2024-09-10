@@ -42,13 +42,10 @@ body{
 
 /* TYPOGRAPHY */
 
-h1{
+h1 {
     font-family: 'Space Grotesk', serif;
-    font-weight: 700;
-    font-size: clamp(48px, 20vw, 100px);
-    line-height: clamp(48px, 20vw, 100px);
-    margin-top: -10px;
-
+    font-size: clamp(48px, 8vw, 100px); 
+    color: #00D1FF;
 }
 
 h2{
@@ -57,11 +54,8 @@ h2{
     font-weight: 700;
 }
 
-h3{
+h3 {
     font-family: 'Space Grotesk', serif;
-    font-size: clamp(24px, 5vw, 40px);
-    font-weight: 700;
-    font-size: 40px;
     color: #00D1FF;
 }
 
@@ -157,10 +151,9 @@ header{
     transform: scale(1.1);
 }  */
 
-
 /* LANDING */
 
-.landing{
+/* .landing{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,6 +171,10 @@ header{
 
 .introduction{
     text-align: left;
+} */
+
+section {
+    min-height: calc(100vh - 120px);
 }
 
 /* ARROW BUTTONS */
