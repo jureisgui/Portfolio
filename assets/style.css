@@ -63,6 +63,7 @@ h3{
 h4{
     font-family: 'Darker Grotesque', sans-serif;
     font-size: clamp(22px, 5vw, 32px);
+    color: #fff;
 }
 
 h5{
@@ -97,8 +98,7 @@ li {
 
 /* HEADER */
 header {
-    background-color: #00242C;
-    
+    background-color: #00242C;  
 }
 
 .logo{
@@ -114,12 +114,10 @@ header {
 .menu-icons{
     font-size: 30px;
     color:#00D1FF;
-
 }
 
 .menu-hover:hover{
-    color: #FFF;
-    
+    color: #FFF; 
 }
 
 #landing-section {
@@ -131,57 +129,55 @@ header {
     margin: 0 auto;
 }
 
-/* ARROW BUTTONS */
-.arrow-down{
-    margin-top: 0.5em;
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);    
-  }
-  
-  @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+/* SKILLS  */
+.skills-card{
+    background-color: #00D1FF;
+    padding: 1rem;
+    border-radius: 12px;
 }
 
-.back-top{
-    margin-left: auto;
-    display: block;
-    margin-bottom: 1em;
-    max-width: 35px;
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%); 
+.skills-card h3{
+    color: #00242C !important;
+    font-weight:700 !important; 
+    margin-bottom: 0.5rem;
 }
 
-.arrow-back{
-    margin-right: auto;
-    display: block;
-    margin-top: 2em;
-    max-width: 40px;
-    padding-bottom: 1em;
-    position: relative;
-    animation: moveLeft 2s infinite;
+.skills-tag{
+    border-radius: 12px;
+    background-color: #00242C;
+    padding: 4px 10px;
+    color:#FFF;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 20px;
+    font-weight:600;
 }
 
-@keyframes moveLeft {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-20px); 
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
+.button-one, .button-two {
+    padding: 8px 32px;
+    border-radius: 12px;
+    font-family: "Darker Grotesque";
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out; 
+    cursor: pointer;
+}
 
+.button-one {
+    background-color: #00D1FF;
+    color: #00242C;
+}
+
+.button-two {
+    background-color: #00242C;
+    border: solid 2px;
+    border-color: #00D1FF;
+    color: #00D1FF;
+}
+
+.button-one:hover, .button-two:hover {
+    transform: scale(1.05);
+}
  
 /* STUDY CASES */
 
