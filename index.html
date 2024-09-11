@@ -85,7 +85,7 @@
     <div class="body-container">
 
         <!-- About me section -->
-        <div id="about" class="grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 py-10 md:px-16 md:py-20 text-white">
+        <div id="about" class="grid grid-cols-1 lg:grid-cols-2 gap-10 px-6 py-10 md:pb-20 md:px-16 mb-10 text-white">
             <div class="w-full lg:order-2">
                 <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-12">About Me
                 </h2>
@@ -122,8 +122,7 @@
                             <i class="fa fa-chevron-down"></i>
                         </div>
                         <div id="accordion-3" class="accordion-body hidden p-4 rounded-b">
-                            <p>Since then, I found a new passion: coding. I enjoy the challenge and transforming ideas
-                                into tangible digital creations.</p>
+                            <p>Since then, I found a new passion: coding. I enjoy the challenge and transforming ideas into user-friendly digital creations.</p>
                         </div>
                     </div>
                     <div class="accordion-item border-b border-white">
@@ -162,7 +161,7 @@
 
     </div>
 
-    <div id="experience" class="container mx-auto px-6 md:px-8">
+    <div id="experience" class="container mx-auto px-6 md:px-8 py-10 md:pb-20">
         <div class="grid lg:grid-cols-2 gap-12">
             <!-- Experience Section -->
             <div class="space-y-6">
@@ -268,6 +267,7 @@
                             <span class="tags">Communication</span>
                             <span class="tags">Problem Solving</span>
                             <span class="tags">Adaptability</span>
+                            <span class="tags">Collaboration</span>
                         </div>
                     </div>
                     <div class="mt-8 flex space-x-4">
@@ -286,19 +286,19 @@
         <div class="space-y-8">
             <!-- Project SIWH -->
             <div class="rounded-lg overflow-hidden">
-                <div class="flex flex-col md:flex-row">
-                    <div class="md:w-1/2 p-6 project-mock">
-                        <img src="./assets/images/project-siwh.png" alt="South Island Wildlife Hospital"
-                            class="max-h-96">
+                <div class="flex flex-col lg:flex-row mx-auto">
+                    <div class="lg:w-1/2 project-mock flex items-center">
+                            <img src="./assets/images/project-siwh.png" alt="South Island Wildlife Hospital"
+                                class="">
                     </div>
-                    <div class="md:w-1/2 p-6 project-details">
+                    <div class="lg:w-1/2 p-6 project-details">
                         <h3 class="text-2xl font-bold mb-4">South Island Wildlife Hospital</h3>
                         <p class="mb-4">I redesigned the South Island Wildlife Hospital's website, conducting UX
                             research, documentation, and development to create an intuitive donation system. The goal
                             was to increase donor engagement, raise funds for vital resources, and raise awareness of
                             environmental factors affecting native wildlife care. Additionally, I handled the CMS and
                             e-commerce integration.</p>
-                        <div class="flex space-x-2 mb-4">
+                        <div class="flex space-x-2 mb-4 gap-2 flex-wrap	">
                             <span class="tags">Wordpress</span>
                             <span class="tags">Woocommerce</span>
                             <span class="tags">Javascript</span>
@@ -307,14 +307,14 @@
                         </div>
                         <div class="flex space-x-4">
                             <a href="./assets/documentation/Wildlife-compressed.pdf" target="_blank">
-                                <div class="w-36 h-36 rounded-lg example-card">
-                                    <i class="fas fa-file-alt text-3xl"></i>
+                                <div class="rounded-lg example-card">
+                                    <i class="fas fa-file-alt text-3xl mb-2"></i>
                                     <p>UX Documentation</p>
                                 </div>
                             </a>
                             <a href="https://wildlifehospital.co.nz/" target="_blank">
-                                <div class="w-36 h-36 rounded-lg example-card">
-                                    <i class="fas fa-laptop text-3xl"></i>
+                                <div class="rounded-lg example-card">
+                                    <i class="fas fa-laptop text-3xl mb-2"></i>
                                     <p>Website</p>
                                 </div>
                             </a>
@@ -324,46 +324,65 @@
             </div>
             <!-- Project MovieNews -->
             <div class="rounded-lg overflow-hidden">
-                <div class="flex flex-col md:flex-row-reverse">
-                    <div class="md:w-1/2 p-6 project-mock">
+                <div class="flex flex-col lg:flex-row-reverse mx-auto">
+                    <div class="lg:w-1/2 p-6 project-mock">
                         <img src="./assets/images/project-movienews.png" alt="Movie News" class="max-h-96">
                     </div>
-                    <div class="md:w-1/2 p-6 project-details">
+                    <div class="lg:w-1/2 p-6 project-details">
                         <h3 class="text-2xl font-bold mb-4">Movie News</h3>
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac
-                            tellus egestas viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                            posuere cubilia curae.</p>
+                        <p class="mb-4">I developed a single-page news application using a JavaScript framework and integrated it with the News API. Users can browse, search by term, and filter articles by category. I designed and coded the entire project, ensuring a smooth and intuitive user experience.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="tags">Vue.js</span>
-                            <span class="tags">React</span>
                             <span class="tags">CSS</span>
-                            <span class="tags">Figma</span>
+                            <span class="tags">API</span>
                             <span class="tags">Illustrator</span>
-                            <span class="tags">Cypress</span>
-                            <span class="tags">Storybook</span>
-                            <span class="tags">GitHub</span>
+                            <span class="tags">Figma</span>
                         </div>
-                        <!-- <div class="flex space-x-4">
-                            <a href="#"
-                                class="flex items-center justify-center w-12 h-12 bg-cyan-400 rounded-lg text-teal-900">
-                                <i class="fas fa-laptop text-xl"></i>
-                            </a>
-                            <a href="#"
-                                class="flex items-center justify-center w-12 h-12 bg-cyan-400 rounded-lg text-teal-900">
-                                <i class="fab fa-github text-xl"></i>
-                            </a>
-                        </div> -->
                         <div class="flex space-x-4">
-                            <a href="./assets/documentation/Wildlife-compressed.pdf" target="_blank">
-                                <div class="w-36 h-36 rounded-lg example-card">
-                                    <i class="fas fa-file-alt text-3xl"></i>
+                            <a href="https://www.loom.com/share/cfa747ad807048ee8da2754e82ea8597?sid=42567ec4-9b48-4eac-9143-3bfefb8e9f43" target="_blank">
+                                <div class="rounded-lg example-card">
+                                    <i class="fas fa-laptop text-3xl mb-2"></i>
+                                    <p>Prototype</p>
+                                </div>
+
+                            </a>
+                            <a href="https://github.com/jureisgui/movie-news" target="_blank">
+                                <div class="rounded-lg example-card">
+                                    <i class="fab fa-github text-3xl mb-2"></i>
+                                    <p>GitHub</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cera App -->
+            <div class="rounded-lg overflow-hidden">
+                <div class="flex flex-col lg:flex-row mx-auto">
+                    <div class="lg:w-1/2 p-6 project-mock">
+                        <img src="./assets/images/project-ceraapp.png" alt="South Island Wildlife Hospital"
+                            class="max-h-96">
+                    </div>
+                    <div class="lg:w-1/2 p-6 project-details">
+                        <h3 class="text-2xl font-bold mb-4">Cera App</h3>
+                        <p class="mb-4">I contributed to the development of Cera, an MVP application for pottery enthusiasts in New Zealand. I handled the database design using MongoDB, contributed to the coding and design, and conducted UX research and documentation. The project followed Agile methodology, with daily meetings and task tracking to ensure efficient progress.</p>
+                        <div class="flex space-x-2 mb-4 gap-2 flex-wrap	">
+                            <span class="tags">Sass</span>
+                            <span class="tags">Vue.js</span>
+                            <span class="tags">MongoDB</span>
+                            <span class="tags">Figma</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="./assets/documentation/cera-app_compressed.pdf" target="_blank">
+                                <div class="rounded-lg example-card">
+                                    <i class="fas fa-file-alt text-3xl mb-2"></i>
                                     <p>UX Documentation</p>
                                 </div>
                             </a>
-                            <a href="https://wildlifehospital.co.nz/" target="_blank">
-                                <div class="w-36 h-36 rounded-lg example-card">
-                                    <i class="fab fa-github text-3xl"></i>
-                                    <p>GitHub</p>
+                            <a href="https://www.loom.com/share/63701403050844528656e6b954c2fc47?sid=e5ca6520-1294-4dce-b423-d5eea6dc15ed" target="_blank">
+                                <div class="rounded-lg example-card">
+                                    <i class="fas fa-laptop text-3xl mb-2"></i>
+                                    <p>Prototype</p>
                                 </div>
                             </a>
                         </div>
