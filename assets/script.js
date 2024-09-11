@@ -1,40 +1,64 @@
-// Burger menu
+// Menu
 document.addEventListener('DOMContentLoaded', function() {
     const burgerMenu = document.getElementById('burger-menu');
     const mobileMenu = document.getElementById('mobile-menu');
-    const icon = burgerMenu.querySelector('i'); // Reference to the icon
+    const icon = burgerMenu.querySelector('i');
+    const links = document.querySelectorAll('nav a');
+    const mobileMenuLinks = document.querySelectorAll('#mobile-menu a'); 
 
     burgerMenu.addEventListener('click', function(event) {
-        event.stopPropagation(); // Prevent click from bubbling up
+        event.stopPropagation();
         toggleMenu();
     });
 
     function toggleMenu() {
-        // Toggle the mobile menu visibility
         mobileMenu.classList.toggle('hidden');
-        
-        // Toggle between bars and times icon
-        if (icon.classList.contains('fa-bars')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        } else {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-times');
     }
 
-    // Close menu when clicking outside
     document.addEventListener('click', function(event) {
         if (!mobileMenu.contains(event.target) && !burgerMenu.contains(event.target)) {
-            mobileMenu.classList.add('hidden');  // Hide the mobile menu
-            icon.classList.remove('fa-times');   // Reset to bars icon
-            icon.classList.add('fa-bars');
+            closeMenu();
         }
     });
 
-    // Prevent clicks inside the mobile menu from closing it
     mobileMenu.addEventListener('click', function(event) {
         event.stopPropagation();
+    });
+
+    // close the mobile menu when a mobile menu link is clicked
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            closeMenu();
+        });
+    });
+
+    function closeMenu() {
+        mobileMenu.classList.add('hidden');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    }
+
+    function scrollWithOffset(event) {
+        event.preventDefault(); 
+        const targetId = event.currentTarget.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        const headerOffset = document.querySelector('header').offsetHeight;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - headerOffset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+
+        // remove the #id from the URL
+        history.replaceState(null, null, ' ');
+    }
+
+    links.forEach(link => {
+        link.addEventListener('click', scrollWithOffset);
     });
 });
 
@@ -48,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetBody = document.getElementById(targetId);
             const icon = header.querySelector('i');
 
-            // Close any open accordion and reset icons
+            // close any open accordion and reset icons
             const allBodies = document.querySelectorAll('.accordion-body');
             const allIcons = document.querySelectorAll('.accordion-header i');
             allBodies.forEach(body => {
@@ -61,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 icn.classList.add('fa-chevron-down');
             });
 
-            // Toggle the current accordion and icon
+            // toggle the current accordion and icon
             targetBody.classList.toggle('hidden');
             icon.classList.toggle('fa-chevron-down');
             icon.classList.toggle('fa-chevron-up');

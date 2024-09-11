@@ -97,8 +97,14 @@ li {
 }
 
 /* HEADER */
-header {
+header, .mobile-menu{
     background-color: #00242C;  
+}
+
+.mobile-menu{
+    /* inset: 5; */
+    background-color: #00242C;
+
 }
 
 .logo{
